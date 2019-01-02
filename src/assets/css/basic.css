@@ -1,0 +1,236 @@
+@charset "utf-8";
+body, div, ul, li, ol, h1, h2, h3, h4, h5, h6, input, textarea, select, p, dl, dt, dd, a, img, button, form, table, th, tr, td, tbody, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+html,body{
+    font-family: '微软雅黑';
+    width: 100%;
+    height: 100%;
+    /*overflow: hidden;*/
+}
+
+em, i {
+    font-style: normal;
+}
+ul,li{
+    list-style-type: none;
+}
+strong {
+    font-weight: normal;
+}
+input,textarea,select,option{
+	-webkit-appearance: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    outline-color: transparent;
+}
+input:focus,select:focus{
+	border: 1px solid #f00 !important;
+}
+input.searchInput{
+	border: 1px solid transparent !important;
+}
+.clearfix:after {
+    content: "";
+    display: block;
+    visibility: hidden;
+    height: 0;
+    clear: both;
+}
+::-webkit-input-placeholder {
+    color: #d6d6d6;
+  }
+  :-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #d6d6d6;
+  }
+  ::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #d6d6d6;
+  }
+  :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #d6d6d6;
+  }
+  :-o-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #d6d6d6;
+  }
+  input::-ms-clear{display:none;}
+  input::-ms-reveal{display:none;}
+  
+  /*自动填充的背景*/
+  input:-webkit-autofill{
+	-webkit-box-shadow: 0 0 0 1000px white inset;  
+  }
+
+
+  .listLoading{
+	/*background: #f3f3f3;*/
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 80px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 14px;
+	color: #FC4514;
+ }
+ .listLoading div{
+	margin-top: 10px;
+ }
+ 
+ /*重置element*/
+.el-input__inner {
+    height: 34px;
+    line-height: 34px;
+    font-size: 14px;
+}
+.el-form-item{
+	margin-bottom: 16px;
+}
+.el-button--small{
+	/*font-size: 14px;*/
+	line-height: 15px;
+	padding: 7px 15px;
+}
+.el-button--text{
+	padding: 3px;
+	font-size: 14px;
+}
+
+/*表格*/
+.tableWrap{
+	margin-top: 16px;
+}
+.el-table thead{
+	color: #707172;
+}
+.el-table th{
+	background: #F3F3F3;
+	padding: 8px 0;
+}
+.el-table--enable-row-hover .el-table__body tr:hover > td{
+	background: #ffece1;
+}
+.el-table td{
+	padding: 8px 0;
+	border-bottom: 1px solid #D4D4D4;
+}
+.el-table td:first-child,.el-table th:first-child{
+	padding-left: 10px;
+}
+.el-table--group::after, .el-table--border::after, .el-table::before{
+	background-color: #D4D4D4;
+}
+.el-button--text{
+	color: inherit;
+}
+.el-pagination{
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 10px;
+}
+.listLoading .el-loading-spinner{
+	top: 120px;
+}
+
+.el-message{
+	top: 80px;
+}
+
+.readed{
+		color: #b7b7b7;
+	}
+.unread{
+	color: #797979;
+}
+
+
+
+/*验证码*/
+  .captcha-wrap{
+    display: flex;
+    align-items: center;
+    height: 32px;
+    width:100%;
+  }
+  .captcha-wrap .el-input{
+    flex: 1;
+  }
+  .captcha-num{
+    margin-left: 10px;
+    height: 100%;
+    width: 100px;
+    text-align: center;
+    position: relative;
+  }
+  .captcha{
+    width: 100%;
+    height: 100%;
+    background: #3b4356;
+  	border-radius: 4px;
+  	color: #fff;
+  	cursor: pointer;
+  	line-height: 32px;
+  	font-size: 12px;
+  }
+  
+  .captcha-num span {
+	  position: absolute;
+	  left: 0;
+	  top: 0;
+	  width: 100%;
+	  height: 100%;
+	  background: #efefef;
+	  border-radius: 4px;
+	  color: #ccc;
+	  line-height: 32px;
+	  font-size: 12px;
+   }
+   
+/*弹窗*/
+.el-dialog{
+	border-radius: 6px;
+	top: 38%;
+	transform: translateY(-50%);
+}
+.el-dialog__footer{
+	text-align: left;
+}
+.el-dialog__header{
+	padding: 30px 30px 15px;
+}
+.el-dialog__footer{
+	padding: 10px 30px 30px;
+}
+.el-dialog__body{
+	padding: 0 30px;
+}
+
+
+/*企业认证*/
+.cInfo .el-input{
+	max-width: 580px;
+}
+.cInfo .upLoad .el-form-item__content .cont,
+.idInfo .upLoad .el-form-item__content .cont{
+	display: flex;
+}
+@media only screen and (max-width: 850px) {
+	 .cInfo .upLoad .el-form-item__content .cont,
+	 .idInfo .upLoad .el-form-item__content .cont{
+		display: block;
+	}
+}
+.cInfo .captcha-wrap{
+	width: 30%;
+	min-width: 80px;
+}

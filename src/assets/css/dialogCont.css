@@ -1,0 +1,81 @@
+@charset "utf-8";
+.dialog .title{
+	font-size: 18px;
+}
+
+.dialogCont{
+	margin: 20px 0;
+}
+
+.addCont div{
+	margin-bottom: 20px;
+	font-size: 14px;
+}
+
+.addCont div label{
+	display: block;
+}
+
+.addCont div input{
+	display: block;
+	width: 100%;
+	/*line-height: 14px;*/
+}
+
+input {
+  height: 34px;
+  line-height: 14px;
+  padding: 9px 18px 9px 15px;
+  /*padding-left: 15px;
+  padding-right: 18px;*/
+  width: 100%;
+  /* outline: none; */
+  border: 1px solid #bcbcbc;
+  box-sizing: border-box;
+  font-size: 14px;
+  border-radius: 4px;
+  -ms-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  -webkit-border-radius: 4px;
+}
+
+input:focus {
+  outline-style: auto;
+  outline-width: 2px;
+}
+
+.btn-ground{
+		margin-top: 25px;
+		position: relative;
+		overflow: hidden;
+	}
+	
+.btn-ground button{
+		width: 100px;
+		height: 30px;
+		line-height: 29px;
+		text-align: center;
+		font-size: 14px;
+	    background: #FC4514;
+	    border-radius: 4px;
+		-ms-border-radius: 4px;
+		-moz-border-radius: 4px;
+		-o-border-radius: 4px;
+		  -webkit-border-radius: 4px;
+	    position: relative;
+	    cursor: pointer;
+	    overflow: hidden;
+	    color: #fff;
+	    outline: none;
+	    border: none;
+	}
+	
+.btn-ground .btn-hide {
+	    width: 100%;
+	    height: 100%;
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    background: rgba(255, 255, 255, 0.5);
+	}

@@ -1,0 +1,78 @@
+@charset "utf-8";
+.header{
+	margin-bottom: 17px;
+}
+
+.header .head-title{
+	font-size: 18px;
+	color: #303030;
+}
+.header .head-number{
+	font-size: 16px;
+}
+
+.r_header {
+  width: 100%;
+  line-height: 40px;
+  background: #f3f3f3;
+  color: #3f3f3f;
+  font-size: 14px;
+  padding-left: 34px;
+  box-sizing: border-box;
+  font-family: MicrosoftYaHei;
+}
+
+.r_header .left_icon{
+	background: url(../img/icon-right.png) no-repeat;
+	transform: rotate(-180deg);
+	-webkit-transform: rotate(-180deg);
+	width: 8px;
+	height: 13px;
+	display: inline-block;
+	margin-right: 10px; 
+}
+
+.r_header .r_header_title{
+	color: #FC4514;
+	cursor: pointer;
+}
+
+.r_h_btn {
+  float: right;
+  width: 100px;
+  line-height: 30px;
+  text-align: center;
+  background: #FC4514;
+  color: #fff;
+  font-size: 13px;
+  margin: 5px 13px;
+  cursor: pointer;
+}
+.r_content {
+  /*padding-top: 20px;*/
+  padding-bottom: 50px;
+}
+
+
+
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    visibility: hidden;
+    height: 0;
+    clear: both;
+}
+
+
+.lxr_list{
+	height: 420px;
+}

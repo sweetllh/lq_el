@@ -1,0 +1,345 @@
+@charset "utf-8";
+#header {
+  width: 100%;
+  background: #1c212e;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 30000;
+  /*margin-bottom: 25px;*/
+}
+.header-wrap {
+  height: 60px;
+  line-height: 60px;
+  max-width: 1120px;
+  padding: 0 40px;
+  margin: 0 auto;
+  position: relative;
+}
+.logo {
+  width: 90px;
+  margin-right: 40px;
+  position: absolute;
+}
+.logo img{
+	vertical-align: middle;
+}
+.header-wrap .menuWrap {
+  float: left;
+  height: 60px;
+  line-height: 14px;
+  margin-left: 140px;
+  overflow: hidden;
+}
+.header-wrap .menu li {
+  height: 60px;
+  display: inline-block;
+ 
+}
+.header-wrap .menu a {
+  height: 100%;
+  text-align: center;
+  /*width: 100px;*/
+  padding: 0 20px;
+  display: inline-block;
+  color: #fff;
+  font-size: 12px;
+}
+
+.menu .title{
+	display: inline-block;
+	width: 100%;
+}
+.menu .img{
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	vertical-align: middle;
+	padding-top: 10px;
+}
+.header-wrap .menu .router-link-exact-active,.menu .router-link-active {
+  background: #121621;
+}
+.header-wrap .menu a:hover {
+  background: #2c3240;
+}
+.menu-home {
+  background-position: 0 0;
+}
+.header-wrap .menu a:hover .menu-home,
+.router-link-exact-active .menu-home {
+  background-position: -96px 0;
+}
+.menu-file {
+  background-position: -16px 0;
+}
+.header-wrap .menu a:hover .menu-file,
+.router-link-exact-active .menu-file {
+  background-position: -112px 0;
+}
+.menu-account {
+  background-position: -48px 0;
+}
+.header-wrap .menu a:hover .menu-account,
+.router-link-exact-active .menu-account {
+  background-position: -144px 0;
+}
+.help {
+  float: right;
+  height: 60px;
+}
+.help li {
+  float: left;
+  margin-left: 36px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.build-news {
+  display: block;
+  width: 100px;
+  height: 27px;
+  line-height: 27px;
+  position: relative;
+  background: #FC4514;
+  overflow: hidden;
+}
+.build-news img{
+  float: left;
+  width: 16px;
+  display: block;
+  margin: 5px 9px;
+}
+.build-news p{
+  float: left;
+  font-size: 12px;
+  color: #fff;
+}
+.build-news p a{
+	color: #fff;
+}
+.build-news input{
+  position: absolute;
+  height: 100%;
+  width: 200px;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  opacity: 0;
+}
+.loading{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0,0,0,0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 99;
+}
+.loading img{
+	width: 100px;
+}
+.unreadNews{
+	position: relative;
+}
+.help .unread{
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	background: #FC4514;
+	position: absolute;
+	left: 11px;
+	top: 22px;
+}
+
+	/*企业认证*/
+.contCover{
+  position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0,0,0,0.5);
+	z-index: 5;
+}
+.authentication .certCont{
+	position: fixed;
+	top: 50%;
+    left: 50%;
+    margin-left: -225px;
+    margin-top: -75px;
+	overflow: hidden;
+	width: 450px;
+	height: 150px;
+	border-radius: 10px;
+	background: #fff;
+	z-index: 10;
+}
+.certCont p{
+	line-height: 150px;
+	text-align: center;
+	font-size: 16px;
+	color: #424242;
+}
+.certCont p a{
+	color: #FC4514;
+}
+.dialog-close {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 900;
+}
+.drop-enter-active {
+  transition: all .4s ease;
+}
+.drop-leave-active {
+  transition: all .3s ease;
+}
+.drop-enter {
+  transform: translateY(-500px);
+}
+.drop-leave-active {
+  transform: translateY(-500px);
+}
+
+
+/*响应式*/
+.mobileMenuBtn {
+    position: absolute;
+    right: 40px;
+    top: 25px;
+    width: 20px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 100;
+    transition: 0.4s all;
+    -webkit-transition: 0.4s all;
+}
+.mobileMenuBtn.active {right: 220px;}
+
+.mobileMenuBtn span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    margin-bottom: 5px;
+    transition: 0.3s all;
+    -webkit-transition: 0.3s all;
+}
+
+.mobileMenuBtn span:first-child, .mobileMenuBtn span:last-child {
+    transform-origin: 100% 50%;
+    -webkit-transform-origin: 100% 50%;
+    transform: rotate(0);
+    -webkit-transform: rotate(0);
+}
+.mobileMenuBtn span:nth-child(2) {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+}
+.mobileMenuBtn.active span:first-child {
+	transform: rotate(-43deg);
+	-webkit-transform: rotate(-43deg);
+}
+
+.mobileMenuBtn.active span:last-child {
+	transform: rotate(43deg);
+	-webkit-transform: rotate(43deg);
+}
+.mobileMenuBtn.active span:nth-child(2) {
+	transform: translateX(80px);
+	-webkit-transform: translateX(80px);
+	opacity: 0;
+}
+.headerMenu ul .nav-last-li {
+    display: none;
+}
+
+.menuWrap .mdShow{
+	 position: absolute;
+     right: 70px;
+     top: 19px;
+}
+.menuWrap .mdShow li{
+	display: inline-block;
+	margin-right: 10px;
+	cursor: pointer;
+}
+.menuWrap .unread{
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	background: #FC4514;
+	position: absolute;
+	left: 11px;
+	top: 8px;
+}
+
+.menuWrap .mobileMenuBtn_shad{
+	width: 100%;
+    height: 0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.7);
+    transition: 0.3s all;
+    -webkit-transition: 0.3s all;
+}
+
+.menuWrap .mobileMenuBtn_shad.active {
+    height: 100%;
+}
+
+@media screen and (max-width: 991px){
+	.headerMenu {
+	    width: 160px;
+	    background: #181c25;
+	    position: fixed;
+	    height: 100%;
+	    overflow: auto;
+	    top: 0;
+	    right: -200px;
+	    transition: 0.6s all;
+	    -webkit-transition: 0.6s all;
+	}
+	.headerMenu.active {
+	    right: 0;
+	}
+	.headerMenu .menu li,.headerMenu .menu li a{
+		width: 100%;
+		text-align: left;
+		height: 50px;
+		line-height: 50px;
+	}
+	.headerMenu .menu .title{
+		width: 70%;
+	}
+	
+	.menu .img{
+		padding-top: 0;
+		padding-bottom: 17px;
+	}
+	.headerMenu ul .nav-last-li{
+		display: block;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.menuWrap .unread{
+			width: 5px;
+			height: 5px;
+			top: 6px;
+			left: 12px;
+	}
+}

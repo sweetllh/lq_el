@@ -1,0 +1,385 @@
+@charset "utf-8";
+.banner {
+  width: 100%;
+  height: 250px;
+  background: url(../img/home-bg.jpg) no-repeat center;
+  background-size: 100% auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 27px;
+  padding-top: 80px;
+  position: relative;
+  
+}
+.banner:before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.5);
+}
+.addBtn{
+  margin-left: 30px;
+  width: 185px;
+  height: 60px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+ 	line-height: 20px;
+ 	font-size: 12px;
+  text-align: left;
+  background: #FC4514;
+  border-radius: 2px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+.toTemplate {
+	margin-left: 30px;
+	text-align: center;
+	width: 185px;
+  line-height: 60px;
+  background: #fff;
+  border-radius: 2px;
+  cursor: pointer;
+  overflow: hidden;
+  font-size: 14px;
+}
+.toTemplate a{
+	padding-left: 15px;
+	color: #FC4514;
+}
+.addBtn img{
+	float: left;
+	width: 17px;
+	height: 17px;
+	margin-top: 12px;
+}
+.dragTag {
+	float: left;
+	padding-left: 20px;
+}
+.addBtn input {
+  position: absolute;
+  width: 200%;
+  height: 100%;
+  left: -80px;
+  top: 0;
+  cursor: pointer;
+  opacity: 0;
+}
+.content {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+.content-top {
+  padding: 30px 0 0;
+}
+.task-list{
+	min-width: 560px;
+	overflow: auto;
+}
+.task-list li {
+  float: left;
+  width: 125px;
+  height: 200px;
+  text-align: center;
+  cursor: pointer;
+}
+.task-list li:first-child{
+	margin-left: 5px;
+}
+.task-list li:hover {
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.14);
+  /*border: 1px solid #f00;*/
+}
+.task-list li a {
+  color: #000;
+}
+.task-list .icon {
+  padding-top: 18px;
+  width: 35px;
+}
+.task-list .count {
+  font-size: 34px;
+  line-height: 3;
+}
+.task-list span {
+  font-size: 14px;
+  color: #797979;
+}
+.home-info {
+	margin-bottom: 20px;
+}
+.wrapper{
+	margin-left: 40px;
+}
+.user-info {
+  padding-top: 18px;
+}
+.user-info .face {
+ 	height: 100%;
+}
+.account a{
+	display: block;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	/*border: 1px solid #ccc;*/
+	overflow: hidden;
+}
+.account{
+	float: left;
+	position: relative;
+	padding-right: 18px;
+}
+.user-info .text-info {
+  font-size: 14px;
+  /*float: left;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 8px 0;
+  line-height: 28px;
+}
+.text-info .name {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.text-info .name img {
+  height: 17px;
+  margin-left: 30px;
+}
+.setMeal {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 14px;
+  padding-top: 46px;
+}
+.setMeal .btn {
+  width: 70px;
+  height: 26px;
+  background: rgba(252, 69, 20, 1);
+  border-radius: 2px;
+  color: #fff;
+  line-height: 26px;
+  text-align: center;
+  margin-left: 40px;
+  cursor: pointer;
+  font-size: 12px;
+}
+.lately {
+  padding-top: 15px;
+  padding-bottom: 80px;
+  overflow: auto;
+}
+.lately-title {
+  font-size: 14px;
+  line-height: 1;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 6px;
+  color: #797979;
+}
+.lately-title a {
+  color: #FC4514;
+  position: relative;
+  padding-right: 20px;
+}
+.lately-title a i {
+  position: absolute;
+  width: 7px;
+  height: 11px;
+  right: 7px;
+  display: block;
+  background: url(../img/icon-right.png) no-repeat;
+  top: 1px;
+}
+
+th {
+  width: 15%;
+}
+
+.file-name {
+  width: 40%;
+  padding-left: 5% !important;
+}
+
+
+
+tbody tr:hover {
+  background: #ffece1;
+}
+.plus-icon {
+	vertical-align: middle;
+	margin-bottom: 4px;
+}
+
+
+.head_title{
+	color: #797979 ;
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+.data-none{
+ text-align: center ;
+ line-height: 40px;
+  border-bottom: 1px solid #d4d4d4;
+  color: #797979;
+  font-size: 14px;
+}
+.loading{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0,0,0,0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 99;
+}
+.loading img{
+	width: 100px;
+}
+.red a,.red{
+		color: #FC4514;
+		cursor: pointer;
+	}
+	
+	
+	/*企业认证*/
+.contCover{
+  position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0,0,0,0.5);
+	z-index: 5;
+}
+.authentication .certCont{
+	position: fixed;
+	top: 50%;
+  left: 50%;
+  margin-left: -225px;
+  margin-top: -75px;
+	overflow: hidden;
+	width: 450px;
+	height: 150px;
+	border-radius: 10px;
+	background: #fff;
+	z-index: 10;
+}
+.certCont p{
+	line-height: 150px;
+	text-align: center;
+	font-size: 16px;
+	color: #424242;
+}
+.certCont p a{
+	color: #FC4514;
+}
+.dialog-close {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 900;
+}
+.drop-enter-active {
+  transition: all .4s ease;
+}
+.drop-leave-active {
+  transition: all .3s ease;
+}
+.drop-enter {
+  transform: translateY(-500px);
+}
+.drop-leave-active {
+  transform: translateY(-500px);
+}
+.handel span:hover{
+	color: #FC4514;
+}
+
+.IsAuthentication{
+	width: 100%;
+	line-height: 30px;
+	background: #F3F3F3;
+	color: #797979 ;
+	text-align: center;
+	font-size: 12px;
+}
+.IsAuthentication a{
+	color: #FC4514;
+	/*text-decoration: underline;*/
+}
+.qr_code{ 
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 20px 40px 50px;
+	background: #F3F3F3;
+	font-size: 12px;
+}
+
+.qr_code .codeList{
+	display: flex;
+}
+
+.qr_code .codeCont{
+	margin-left: 15px;
+	padding: 10px 0;
+	line-height: 30px;
+}
+.codeCont img{
+	margin-right: 5px;
+	vertical-align: middle;
+	display: inline-block;
+}
+.qr_code .theme{
+		color: #989898;
+}
+
+.qr_code .tip{
+	color: #222222;
+}
+
+@media screen and (min-width: 992px){
+	.qr_code{
+			display: flex;
+			justify-content: center;
+			padding-left: 120px;
+	}
+}
+
+@media screen and (max-width: 991px){
+	.qr_code .codeList{
+			justify-content: center;
+			margin-bottom: 15px;
+	}
+	.qr_code .codeCont{
+		width: 220px;
+	}
+}
+@media screen and (max-width: 560px){
+	.dragTag p{
+		line-height: 45px;
+	}
+	.dragTag p:nth-child(2){
+			display: none;
+	}
+	.addBtn{
+		width: 140px;
+	}
+}
