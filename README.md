@@ -1,3 +1,5 @@
+vue2.0 + axios + vueRouter + elementul
+
 # lqweb
 
 > A Vue.js project
